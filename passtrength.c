@@ -105,8 +105,10 @@ void parser(char *password)
 
 int main(int ac, char **argv)
 {
-    if (ac < 2)
+    if (ac < 2) {
+        printf("Usage: ./passtrength <password>");
         return (84);
+    }
     else
         parser(argv[1]);
     return (0);
