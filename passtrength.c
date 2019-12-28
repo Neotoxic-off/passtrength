@@ -12,26 +12,26 @@
 
 void printpart(general *global)
 {
-    printf("Password....... %s\n\n", global->pass);
-    printf("Length......... %d\n", global->length);
-    printf("Low............ %d\n", global->low);
-    printf("High........... %d\n", global->high);
-    printf("Number......... %d\n", global->number);
-    printf("Special........ %d\n", global->special);
-    printf("Occurrence..... %d\n\n", global->occurrence);
-    printf("Strength....... %d\n", global->strength);
+    printf("Password.......: %s\n\n", global->pass);
+    printf("Length.........: %d\n", global->length);
+    printf("Low............: %d\n", global->low);
+    printf("High...........: %d\n", global->high);
+    printf("Number.........: %d\n", global->number);
+    printf("Special........: %d\n", global->special);
+    printf("Occurrence.....: %d\n\n", global->occurrence);
+    printf("Strength.......: %d\n", global->strength);
     if (global->strength <= 5)
-        printf("Comment........ %sDon't use that password\n", KRED);
+        printf("Comment........: %sDon't use that password\n", KRED);
     if (global->strength <= 7 && global->strength > 5)
-        printf("Comment........ %sNot enough strong add more variations\n", KRED);
+        printf("Comment........: %sNot enough strong add more variations\n", KRED);
     if (global->strength <= 10 && global->strength > 7)
-        printf("Comment........ %sCorrect password but think to change it quickly\n", KYEL);
+        printf("Comment........: %sCorrect password but think to change it quickly\n", KYEL);
     if (global->strength <= 15 && global->strength > 10)
-        printf("Comment........ %sStrong password but don't use it in all your accounts\n", KYEL);
+        printf("Comment........: %sStrong password but don't use it in all your accounts\n", KYEL);
     if (global->strength <= 17 && global->strength > 15)
-        printf("Comment........ %sGood password you can use it\n", KGRN);
+        printf("Comment........: %sGood password you can use it\n", KGRN);
     if (global->strength <= 20 && global->strength > 17)
-        printf("Comment........ %sThe strongest password i've ever seen\n", KGRN);
+        printf("Comment........: %sThe strongest password i've ever seen\n", KGRN);
         
 }
 
