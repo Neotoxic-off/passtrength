@@ -3,7 +3,7 @@ Check your password strength
 
 ### Install:
 ```
-git clone https://github.com/Neotoxic-off/Passtrength
+git clone https://github.com/Neotoxic-off/passtrength
 ```
 
 ### Usage:
